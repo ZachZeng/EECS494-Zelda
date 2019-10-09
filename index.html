@@ -8,11 +8,39 @@
     <script>
       UnityLoader.instantiate("unityContainer", "Build/ZeldaWebbuild.json");
     </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1 style="margin-bottom: 50px">Zelda Re-implement</h1>
+    <div class='wrapper' id='main-header'>
+    <!-- <h1>Header</h1> -->
+    <div id="header-wrapper">
+      <h2>EECS494 P1</h2>
+      <h1>Zelda Re-implement</h1>
+    </div>
+    </div>
+    
     <br>
     <br>
-    <div id="unityContainer" style="width: 640px; height: 600px; margin: auto; text-align: center"></div>
+    <div id="unityWrapper">
+      <div id="unityContainer"></div>
+      <div id="description">
+        
+        <p>
+          Our custom level has changed the light in the game, which contains one dark room, one secret room and one torch room. Player need to use our new tool -- flashlight to go through these levels.
+        </p>
+        <p>
+          Our custom mechanic is based on the new tool -- flashlight. Player can use flashlight to detect secret doors, ghosts(new enemy) and lighten their path. 
+        </p>
+
+        
+      </div>
+    </div>
+    
+    <footer>
+      <div id="footerContainer">
+        Created by: Yizhou Zeng & Jieqing Chen
+      </div>
+    </footer>
+    
   </body>
 </html>
